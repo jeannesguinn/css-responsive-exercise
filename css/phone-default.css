@@ -6,33 +6,55 @@ html {-webkit-text-size-adjust: none; }
 
 /*-----BODY -----*/
 body {
-	font-size: 16px;	
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 
 
 /*-----CONTAINER -----*/
 #container {
-	background-color: #fff;   /*becomes the nav background color*/
+	background-color: #ab6d00;   /*becomes the nav background color*/
 	min-width: 320px;
 	max-width: 1140px;
 }
 
 /*-----HEADER -----*/
-header {}
-header h1 {}
-header h2 {}
+header {
+	background-color: #000500;
+}
+header hgroup{
+	font-family: 'Overlock SC', cursive;
+	color: #eca932;
+}
+header h1 {font-size: 2em;}
+header h2 {font-size: 1.05em;}
 
 
 
 /*-----NAVigation -----*/
 nav {}
-nav ul li {}
+nav ul{
+	padding: 1em 0;
+}
+nav ul li {
+	float: left;
+	width: 46%;
+	margin: 0 2%;
+}
 nav ul li a {
+	text-align: center;
 	display:block;
-	background-color:#ccc;
+	font-weight: 600;
+	margin: .2em 0;
+	padding: .6em 0;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 16px;
 }
 nav ul li a:hover {
-	background-color:#999;
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 
@@ -40,8 +62,50 @@ nav ul li a:hover {
 /*-----CONTENT -----*/
 #content {
 	min-height: 5em;
+	background-color: #eee;
+	background-image: url(../images/soft_wallpaper.png);
+	padding: .5em 2%;
+}
+#content h1{
+	font-family: 'Overlock SC', cursive;
+	color: #5b0000;
+}
+#content hr{
+	height: 30px;
+	border: none;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5b0000+0,5b0000+100&1+0,0+100 */
+	background: -moz-linear-gradient(left,  rgba(91,0,0,1) 0%, rgba(91,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(91,0,0,1) 0%,rgba(91,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(91,0,0,1) 0%,rgba(91,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b0000', endColorstr='#005b0000',GradientType=1 ); /* IE6-9 */
 }
 
+#content article{
+	padding-bottom: 2em;
+	border-bottom: dotted 2px #ccc;
+}
+#content article h2{
+	font-weight: 600;
+	font-size: 1.2em;
+	padding-top: 2em;
+	color: #773300;
+}
+#content article p{
+	font-size: 1em;
+	padding: .3em 0 .1em 1em;
+	color: #763400;
+	line-height: 1.5em;
+}
+#content a.top{
+	background-color: #aa6d00;
+	font-weight: 600;
+	color: #fff;
+	border-radius: 15px;
+	padding: .3em 1em;
+	margin-top: .3em;
+	float: right;
+	text-decoration: none;
+}
 
 
 /*----- FOOTER -----*/
@@ -49,4 +113,10 @@ footer {
 	clear: both;
 	text-align: center;
 	padding: 1em;
+}
+
+
+/*----- OTHER STUFF --------*/
+div.keepOpen{
+	clear:both;
 }
