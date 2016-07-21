@@ -33,13 +33,27 @@
 		display: block;
 		position: absolute;
 		top: -90px;
-		right: -140px;
+		right: -110px;
+	}
+	/*--social icons--*/
+	header ul.icons{
+		padding-right: 65px;
+	}
+	header ul.icons a{
+		-webkit-transition: opacity .5s ease;
+		transition: opacity .5s ease;
+	}
+	header ul.icons a:hover{
+		opacity: 1;
 	}
 
 
 /*-----NAVigation -----*/
 
-
+	nav ul li a{
+		-webkit-transition: background-color .5s ease;
+		transition: background-color .5s ease;
+	}
 
 /*-----CONTENT -----*/
 
