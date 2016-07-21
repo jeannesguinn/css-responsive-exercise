@@ -30,7 +30,22 @@ header hgroup{
 header h1 {font-size: 2em;}
 header h2 {font-size: 1.05em;}
 
-
+/*--SOCIAL ICONS--*/
+header ul.icons{
+	float: right;
+	padding-right: 2%;
+}
+header ul.icons li{
+	float: left;
+	margin-top: 1em;
+	margin-right: .3em;
+}
+header ul.icons li a{
+	opacity: .7;
+}
+header img.header-image{
+	display: none;
+}
 
 /*-----NAVigation -----*/
 nav {}
@@ -100,12 +115,16 @@ nav ul li a:hover {
 	background-color: #aa6d00;
 	font-weight: 600;
 	color: #fff;
-	border-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 3px;
 	padding: .3em 1em;
 	margin-top: .3em;
 	float: right;
 	text-decoration: none;
 }
+
 
 
 /*----- FOOTER -----*/

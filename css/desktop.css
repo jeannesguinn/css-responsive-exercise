@@ -1,18 +1,40 @@
 @media only screen and (min-width: 1141px) {
 /*-----BODY -----*/
-	body {}
+	body {
+		background-image: url(/images/stars.jpg);
+		background-position: center;
+
+	}
 
 /*-----WRAPPER -----*/
-	#wrapper {}
+	#wrapper {
+		padding: 125px 0 140px 0;
+		background: url(/images/sunglow.png) no-repeat center top;
+
+
+	}
 
 /*-----CONTAINER -----*/
 	#container {
 		margin: 2em auto;
 		border: 1px solid #888;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
 	}
 
 /*-----HEADER -----*/
 
+	header{
+		position: relative;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	header img.header-image{
+		display: block;
+		position: absolute;
+		top: -90px;
+		right: -140px;
+	}
 
 
 /*-----NAVigation -----*/
@@ -26,4 +48,4 @@
 /*----- FOOTER -----*/
 
 
-} 
+}
