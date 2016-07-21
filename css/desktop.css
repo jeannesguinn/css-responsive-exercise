@@ -20,6 +20,7 @@
 		border: 1px solid #888;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
+		margin-bottom: 0;
 	}
 
 /*-----HEADER -----*/
@@ -57,9 +58,40 @@
 
 /*-----CONTENT -----*/
 
-
+	#content a{
+		-webkit-transition: color .6s ease;
+		transition: color .6s ease;
+	}
+	#content ul.earth li a img{
+		-webkit-transition: -webkit-transform 0.6s ease-in-out;
+		transition: transform 0.6s ease-in-out;
+	}
+	#content ul.earth li a:hover img{
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
 
 /*----- FOOTER -----*/
+	footer{
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+	}
+	footer .left, footer .right{
+		position: absolute;
+		top: -20px;
+		width: 20px;
+		height: 20px;
+		border-top: 20px solid transparent;
+	}
+	footer .left{
+		border-right: 20px solid #956000;
+	}
+	footer .right{
+		right: 0;
+		border-left: 20px solid #956000;
+		border-top: 20px solid transparent;
+	}
 
 
 }
